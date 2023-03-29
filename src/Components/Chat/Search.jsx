@@ -84,7 +84,6 @@ const Search = () => {
           value={username}
         />
       </div>
-      {err && <span>Пользователь не найден</span>}
       {user && (
         <div className="userChat" onClick={handleSelect}>
           <img src={user.photoURL} alt="" />
@@ -93,6 +92,7 @@ const Search = () => {
           </div>
         </div>
       )}
+      <button onClick={handleSearch}>Поиск</button>
     </div>
   );
 };
